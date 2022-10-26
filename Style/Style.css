@@ -1,6 +1,41 @@
 body{
-    background-color: green;
+    background-color: white;
 }
-input{
-    border-color: wheat;
+::placeholder{
+    opacity: 3;
+    color: rgb(0, 0, 0);
+    align-content: center;
+}
+
+.login-container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.login-container .bg{
+    display: block;
+    background-color: #F0EBCE;
+    padding: 9ex 8ex 9ex 8ex;
+    border-radius: 5px;
+}
+.login-container .form{
+    margin-bottom: 10px;
+    width: 33em;
+    height: 3em;
+    border-radius: 5px;
+}
+.login-container h1{
+    text-align: center;
+}
+.login-container h4{
+    margin-bottom: 10px;
+}
+.login-container button {
+    background-color: #AA8B56;
+    width: 10em;
+    height: 41px;
+    border: 0;
+    border-radius: 3px;
 }
