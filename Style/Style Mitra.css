@@ -1,0 +1,16 @@
+body{
+    background-color: #395144;
+}
+
+.container{
+    background-color: #F0EBCE;
+    float: left;
+    width: 30%;
+    margin: 20px;
+}
+
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
