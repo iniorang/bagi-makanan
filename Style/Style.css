@@ -39,3 +39,60 @@ body{
     border: 0;
     border-radius: 3px;
 }
+* {
+    margin:0; 
+    padding:0;
+}
+
+nav {
+   margin:auto;
+   text-align: center;
+   width: 100%;
+   font-family: arial;
+} 
+
+nav ul {
+   background:#395144;
+   padding: 0px 1px;
+   list-style: none;
+   display: inline-table;
+   width: 100%;
+}
+
+nav ul li{
+   float:left;
+}
+
+nav ul li:hover{
+   background:#4E6C50;
+   height: 70px;
+}
+
+nav ul li:hover a{
+    color:#fff;
+}
+
+nav ul li a{
+    display: block;
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+nav img{
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-right: 20px;
+}
+.btn-nav{
+    float: right;
+    height: 40px;
+    width: 105px;
+    margin-top: 15px;
+    margin-right: 45px;
+    border-spacing: 5px;
+    background: #4E6C50;
+    color: white;
+    text-decoration: none;
+    right: 5px;
+}
