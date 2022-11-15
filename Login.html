@@ -8,20 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <script lang="javascript">
-        document.write("Hi dek");
-    </script>
     <div class="login-container">
-        <form class="bg">
+        <form class="bg" method="post" id="loginform">
             <h1>Login</h1>
             <h4>Username</h4>
-            <input class="form" type="text"><br>
+            <input class="form" type="text" id="uname"><br>
             <h4>Password</h4>
-            <input class="form" type="password"><br>
+            <input class="form" type="password" id="upass"><br>
             <a href="">Lupa Password?</a>
-            <button style="float: right">Login</button><br>
-            <button style="width: 34em; margin-top: 5px;">Register</button>
+            <button style="float: right" type="submit">Login</button><br>
+            <a href="Register.html">
+                <button style="width: 34em; margin-top: 5px;" >Register</button>
+            </a>
         </form>
       </div>
+      <script src="scripts.js"></script>
 </body>
 </html>
