@@ -7,26 +7,25 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="Style/Style.css">
-    <script src='main.js'></script>
 </head>
 
 <body>
     <div class="login-container">
-        <form action="Landing.html" class="bg" method="get">
+        <form class="bg" method="post" id="regform">
             <h1>Register</h1>
             <h4>Username</h4>
-            <input class="form" type="text" name="reg_user"><br>
+            <input class="form" type="text" id="reg_user"><br>
             <h4>Email</h4>
-            <input class="form" type="text" name="reg_mailr"><br>
+            <input class="form" type="text" id="email"><br>
             <h4>Password</h4>
-            <input class="form" type="password" name="reg_pass"><br>
+            <input class="form" type="password" id="reg_pass"><br>
             <h4>Nomor Telepon</h4>
-            <input class="form" type="number" name="reg_no"><br>
+            <input class="form" type="number" id="reg_no"><br>
             <center>
-                <button style="width: 35em;margin-top: 20px;">Register</button>
+                <button style="width: 35em;margin-top: 20px;" onclick="register()">Register</button>
             </center>
         </form>
     </div>
 </body>
-
+<script src="scripts.js"></script>
 </html>
