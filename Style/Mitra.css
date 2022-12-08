@@ -89,3 +89,15 @@ footer {
 	color: #AA8B56;
 	text-align: center;
 }
+.box{
+    background-color: #F0EBCE;
+    float: left;
+    width: 30%;
+    margin: 20px;
+    border-radius: 10px;
+}
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
