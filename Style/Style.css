@@ -7,7 +7,7 @@ body{
     align-content: center;
 }
 
-.login-container{
+.form-container{
     display: grid;
     width: 100vw;
     height: 100vh;
@@ -20,7 +20,7 @@ body{
     padding: 9ex 8ex 9ex 8ex;
     border-radius: 5px;
 }
-.login-container .form{
+.form-input{
     margin-bottom: 10px;
     width: 33em;
     height: 3em;
@@ -32,7 +32,7 @@ body{
 .login-container h4{
     margin-bottom: 10px;
 }
-.login-container button {
+.form-container button {
     background-color: #AA8B56;
     width: 10em;
     height: 41px;
