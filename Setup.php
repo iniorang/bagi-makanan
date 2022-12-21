@@ -1,5 +1,5 @@
 <?php 
-class foodo{
+class Setup{
     public $connect;
     public $host;
     public $dbname;
@@ -13,7 +13,7 @@ class foodo{
     }
 
     public function registerUser($data){
-        $querry = "INSERT INTO `user` (`id`, `nama_user`, `email_user`, `pass_user`, `alamat_user`) VALUES (NULL, ?, ?, ?, ?)";
+        $querry = "INSERT INTO `user` (`id`, `nama_user`, `email_user`, `pass_user`, `alamat_user`, 'telp_user') VALUES (NULL, ?, ?, ?, ?, ?)";
         $state = $this->db->prepare($querry);
         $parameter = [$data->nama, $data->email, $data->pass, $data->alamat, $data->telepon];
         return $state->execute($parameter);

@@ -11,7 +11,7 @@
 
 <body>
     <div class="form-container">
-        <form class="bg" method="post" id="regform" action="proses.php">
+        <form class="bg" method="GET" id="regform" action="proses.php">
             <h1>Register</h1>
             <div class="form-input">
                 <label>Nama</label><br>
@@ -23,15 +23,15 @@
             </div>
             <div class="form-input">
                 <label>Password</label><br>
-                <input class="form" name="form_pass" type="pass"><br>
+                <input class="form" name="form_pass" type="password"><br>
             </div>
             <div class="form-input">
                 <label>Re-Enter Password</label><br>
-                <input class="form" name="form_Repass" type="pass"><br>
+                <input class="form" name="form_Repass" type="password"><br>
             </div>
             <div class="form-input">
                 <label>Alamat</label><br>
-                <input class="form" name="form_alamat" type="number"><br>
+                <input class="form" name="form_alamat" type="text"><br>
             </div>
             <div class="form-input">
                 <label>Nomor Telepon</label><br>
