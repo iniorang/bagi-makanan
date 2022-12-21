@@ -11,7 +11,7 @@
 
 <body>
     <div class="form-container">
-        <form class="bg" method="GET" id="regform" action="proses.php">
+        <form class="bg" method="POST" id="regform" action="registeruser.php">
             <h1>Register</h1>
             <div class="form-input">
                 <label>Nama</label><br>
@@ -41,5 +41,4 @@
         </form>
     </div>
 </body>
-<script src="scripts.js"></script>
 </html>

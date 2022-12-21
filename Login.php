@@ -11,7 +11,7 @@
 
 <body>
     <div class="form-container">
-        <form method="post" id="loginform" action="backlogin.php">
+        <form method="post" id="loginform" action="userlogin.php">
             <h1>Login</h1>
             <div class="form-input">
                 <label>Email</label><br>
@@ -19,7 +19,7 @@
             </div>
             <div class="form-input">
                 <label>Password</label><br>
-                <input class="form" type="password" name="form_userpass"><br>
+                <input class="form" type="password" name="form_pass"><br>
             </div>
             <a href="">Lupa Password?</a>
             <button style="float: right">Login</button><br>
