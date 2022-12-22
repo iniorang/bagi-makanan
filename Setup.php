@@ -18,6 +18,13 @@ class Setup{
         $parameter = [$data->nama, $data->email, $data->pass, $data->alamat, $data->telepon];
         return $state->execute($parameter);
     }
+
+    public function tambahmakan($menu){
+        $querry = "INSERT INTO `menu` (`idmakanan`, `makanan_menu`, `jumlah_menu`, `pendonasi_menu`) VALUES (NULL, ?, ?, ?)";
+        $state = $this->db->prepare($querry);
+        $parameter = [$menu->makanan, $menu->jumlah, $menu->pendonasi];
+        return $state->execute($parameter);
+    }
 }
 
 ?>
