@@ -6,6 +6,7 @@ class Setup{
     public $user;
     public $pass;
     public $db;
+    
     public function __construct($dbhost,$dbname,$dbuser,$dbpass){
         $this->connect = "mysql:host=" . $dbhost . ";dbname=" . $dbname . ";charsetutf8";
         $this->db = new PDO($this->connect, $dbuser, $dbpass);
@@ -20,7 +21,7 @@ class Setup{
     }
 
     public function tambahmakan($menu){
-        $querry = "INSERT INTO `menu` (`idmakanan`, `makanan_menu`, `jumlah_menu`, `pendonasi_menu`) VALUES (NULL, ?, ?, ?)";
+        $querry = "INSERT INTO `menu` (`idmakanan`, `makanan_menu`, `jumlah_menu`,'alamat_menu, `pendonasi_menu`) VALUES (NULL, ?, ?, ?, ?)";
         $state = $this->db->prepare($querry);
         $parameter = [$menu->makanan, $menu->jumlah, $menu->pendonasi];
         return $state->execute($parameter);
