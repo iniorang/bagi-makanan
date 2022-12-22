@@ -20,7 +20,7 @@ class Setup{
     }
 
     public function tambahmakan($menu){
-        $querry = "INSERT INTO `menu` (`idmakanan`, `makanan_menu`, `jumlah_menu`, `pendonasi_menu`) VALUES (NULL, ?, ?, ?)";
+        $querry = "INSERT INTO `menu` (`idmakanan`, `makanan_menu`, `jumlah_menu`,'alamat_menu, `pendonasi_menu`) VALUES (NULL, ?, ?, ?, ?)";
         $state = $this->db->prepare($querry);
         $parameter = [$menu->makanan, $menu->jumlah, $menu->pendonasi];
         return $state->execute($parameter);
