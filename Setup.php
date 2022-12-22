@@ -6,6 +6,7 @@ class Setup{
     public $user;
     public $pass;
     public $db;
+    
     public function __construct($dbhost,$dbname,$dbuser,$dbpass){
         $this->connect = "mysql:host=" . $dbhost . ";dbname=" . $dbname . ";charsetutf8";
         $this->db = new PDO($this->connect, $dbuser, $dbpass);
