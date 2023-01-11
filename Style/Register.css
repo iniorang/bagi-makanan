@@ -1,0 +1,6 @@
+.form-container{
+    display: flex;
+    background-color: aqua;
+    width: fit-content;
+    float: right;
+}

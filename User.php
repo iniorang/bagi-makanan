@@ -15,6 +15,16 @@ class User{
       $this->alamat = $alamat;
       $this->telepon = $telepon;
     }
+    function register(){
+      echo "Nama:".$this->nama;
+      echo "</br>";
+      echo "Mail:".$this->email;
+      echo "</br>";
+      echo "Alamat:".$this->alamat;
+      echo "</br>";
+      echo "Nomor:".$this->telepon;
+      echo "</br>";
+  }
   }
 
 ?>
